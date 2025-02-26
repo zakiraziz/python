@@ -61,3 +61,15 @@ while running:
         pipes = pipes[2:]  # Remove old pipes
         create_pipe()
         score += 1  # Increase score
+score += 1  # Increase score
+
+    # Draw pipes
+    for pipe in pipes:
+        pygame.draw.rect(screen, GREEN, pipe)
+
+
+    # Update display
+    pygame.display.flip()
+    clock.tick(30)
+
+pygame.quit()
