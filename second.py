@@ -29,3 +29,35 @@ def create_pipe():
     height = random.randint(100, 400)
     pipes.append(pygame.Rect(WIDTH, 0, pipe_width, height))
     pipes.append(pygame.Rect(WIDTH, height + pipe_gap, pipe_width, HEIGHT - height - pipe_gap))
+# Game loop
+running = True
+create_pipe()
+score = 0
+
+while running:
+    screen.fill(BLUE)
+    
+    # Event handling
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+            velocity = -7  # Jump
+
+    # Bird movement
+    velocity += gravity
+    bird.y += velocity
+
+    # Pipe movement
+    for pipe in pipes:
+        pipe.x -= pipe_speed
+
+    # Check collision
+    if bird.y > HEIGHT or bird.y < 0 or any(pipe.colliderect(bird) for pipe in pipes):
+        running = False  # Game over
+
+    # Remove off-screen pipes and add new ones
+    if pipes[0].x < -pipe_width:
+        pipes = pipes[2:]  # Remove old pipes
+        create_pipe()
+        score += 1  # Increase score
