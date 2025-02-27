@@ -12,35 +12,31 @@ A fun and simple Flappy Bird clone built using Pygame! Navigate the bird through
 
 
 # 🛠️ Installation
+
 Ensure Python is installed, then install Pygame:
+    pip install pygame
 
-bash
-Copy
-Edit
-pip install pygame
-🚀 How to Play
-Run the game using:
+# 🚀 How to Play
+  Run the game using:
+    python flappy_bird.py
 
-bash
-Copy
-Edit
-python flappy_bird.py
-🔍 Features
-✅ Simple and fun gameplay
-✅ Randomly generated pipes for a unique experience
-✅ Score tracking
-✅ Smooth physics (gravity & jumping mechanics)
+# 🔍 Features
+1. ✅ Simple and fun gameplay
+2. ✅ Randomly generated pipes for a unique experience
+3. ✅ Score tracking
+4. ✅ Smooth physics (gravity & jumping mechanics)
 
-🔧 Future Improvements
-🔊 Add sound effects & background music
-🔄 Implement a restart feature
-🎨 Improve graphics & animations
-📊 Display a scoreboard
-🤝 Contributing
-Want to improve the game? Fork the repository and submit a pull request!
+# 🔧 Future Improvements
+ 1. 🔊 Add sound effects & background music
+2. 🔄 Implement a restart feature
+3. 🎨 Improve graphics & animations
+4. 📊 Display a scoreboard
 
-📜 License
-This project is open-source under the MIT License.
+# 🤝 Contributing
+  Want to improve the game? Fork the repository and submit a pull request!
+
+# 📜 License
+   This project is open-source under the MIT License.
 
 💡 Enjoy coding and have fun playing! 🎮
 
