@@ -2,16 +2,16 @@
 
 A fun and simple Flappy Bird clone built using Pygame! Navigate the bird through randomly generated pipes while avoiding obstacles.
 
-🎮 Gameplay
-🕊️ The bird moves automatically due to gravity.
-⏫ Press SPACE to make the bird jump.
-🚧 Avoid hitting the pipes or the screen edges.
-🏆 Earn points by passing through pipes.
-❌ The game ends if the bird crashes.
-🖼️ Screenshot
+# 🎮 Gameplay
+1. 🕊️ The bird moves automatically due to gravity.
+2. ⏫ Press SPACE to make the bird jump.
+3. 🚧 Avoid hitting the pipes or the screen edges.
+4. 🏆 Earn points by passing through pipes.
+5. ❌ The game ends if the bird crashes.
+6. 🖼️ Screenshot
 
 
-🛠️ Installation
+# 🛠️ Installation
 Ensure Python is installed, then install Pygame:
 
 bash
