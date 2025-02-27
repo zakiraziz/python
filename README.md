@@ -1,4 +1,5 @@
-🕊️ Flappy Bird Clone (Pygame)
+## 🕊️ Flappy Bird Clone (Pygame)
+
 A fun and simple Flappy Bird clone built using Pygame! Navigate the bird through randomly generated pipes while avoiding obstacles.
 
 🎮 Gameplay
