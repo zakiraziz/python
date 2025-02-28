@@ -1,3 +1,33 @@
+# Dodge the Enemies
+
+A fun and simple game built with Pygame where the player must dodge falling enemies and score points.
+
+# 🎮 Gameplay
+
+1. Control a blue player square using the left and right arrow keys.
+
+2. Avoid red enemy squares that fall from the top of the screen.
+
+3. Score points by surviving as long as possible.
+
+4. If an enemy hits you, it's Game Over! Press R to restart.
+
+# 🖥️ Screenshot
+
+
+
+# 🚀 Features
+
+1. Smooth player movement
+
+2. Randomized enemy spawning
+
+3. Increasing challenge as you progress
+
+4. Restart functionality
+
+
+
 ## 🕊️ Flappy Bird Clone (Pygame)
 
 A fun and simple Flappy Bird clone built using Pygame! Navigate the bird through randomly generated pipes while avoiding obstacles.
