@@ -26,7 +26,51 @@ A fun and simple game built with Pygame where the player must dodge falling enem
 
 4. Restart functionality
 
+# 🛠️ Installation & Running the Game
 
+1. Make sure you have Python installed.
+
+2. Install Pygame if you haven't already:
+
+pip install pygame
+
+3. Clone this repository or copy the script.
+
+4. Run the game:
+
+ python game.py
+
+# 🔧 Controls
+
+1. Left Arrow (←) - Move Left
+
+2. Right Arrow (→) - Move Right
+
+3. R - Restart after game over
+
+4. Close Button (X) - Exit the game
+
+# 📜 Code Overview
+
+1. The game initializes a player and multiple falling enemies.
+
+2. The player can move left and right to avoid collisions.
+
+3. The game keeps track of the score and displays a Game Over screen when hit.
+
+4. Pressing R restarts the game.
+
+# 🤝 Contributing
+
+Feel free to fork this project, add new features, and submit a pull request!
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+#📬 Contact
+
+For any questions or suggestions, feel free to reach out!
 
 ## 🕊️ Flappy Bird Clone (Pygame)
 
