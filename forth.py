@@ -58,4 +58,16 @@ while running:
     
     # Draw basket
     pygame.draw.rect(screen, BLUE, (basket_x, basket_y, BASKET_WIDTH, BASKET_HEIGHT))
+    # Draw stars
+    for star in stars:
+        pygame.draw.circle(screen, RED, (star[0], star[1]), STAR_RADIUS)
     
+    # Display score
+    score_text = font.render(f"Score: {score}", True, (0, 0, 0))
+    screen.blit(score_text, (10, 10))
+    
+    pygame.display.flip()
+    clock.tick(30)
+
+pygame.quit()
+
