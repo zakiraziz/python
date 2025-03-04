@@ -26,3 +26,36 @@ stars = []
 score = 0
 font = pygame.font.Font(None, 36)
 clock = pygame.time.Clock()
+# Game Loop
+running = True
+while running:
+    screen.fill(WHITE)
+    
+    # Event handling
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+    
+    # Basket movement
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT] and basket_x > 0:
+        basket_x -= basket_speed
+    if keys[pygame.K_RIGHT] and basket_x < WIDTH - BASKET_WIDTH:
+        basket_x += basket_speed
+    
+    # Star generation
+    if random.randint(1, 30) == 1:
+        stars.append([random.randint(0, WIDTH - STAR_RADIUS), 0])
+    
+    # Star movement
+    for star in stars[:]:
+        star[1] += 5  # Move the star down
+        if star[1] > HEIGHT:
+            stars.remove(star)
+        elif basket_x < star[0] < basket_x + BASKET_WIDTH and star[1] >= basket_y:
+            stars.remove(star)
+            score += 1
+    
+    # Draw basket
+    pygame.draw.rect(screen, BLUE, (basket_x, basket_y, BASKET_WIDTH, BASKET_HEIGHT))
+    
