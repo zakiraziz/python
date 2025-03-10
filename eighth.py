@@ -29,6 +29,7 @@ for _ in range(num_obstacles):
     y = random.randint(1, (HEIGHT // GRID_SIZE) - 2) * GRID_SIZE
     if (x, y) != tuple(player_pos) and (x, y) != tuple(goal_pos):
         obstacles.append((x, y))
+
 # Game loop
 running = True
 clock = pygame.time.Clock()
